@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/budget', (req, res) => {
-    res.json(/Users/varshareddyjwala/dev/week04/personal-budget/personal-budget.json);
+    res.json("/Users/varshareddyjwala/dev/week04/personal-budget/personal-budget.json");
 })
 
 app.listen(port, () => {
