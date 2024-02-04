@@ -1,36 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
+const cors = require("cors");
+app.use(cors("localhost:3000"));
 
-app.use('/', express.static('public'));
+app.use("/", express.static("public"));
 
-const budget = {
-    myBudget:[
-    {
-        title: 'ELECTRICITY BILL',
-        budget: 300
-    },
-    {
-        title: 'Rent',
-        budget: 350
-    },
-    {
-        title: 'GROCERIES',
-        budget: 85
-    }
-   
-    
-]
-};
-
-app.get('/', (req, res) => {
-    res.send('hello world!');
+app.get("/hello", (req, res) => {
+  res.send("Hello World!");
 });
 
-app.use('/budget', (req, res) => {
-    res.json("/Users/varshareddyjwala/dev/week04/personal-budget/personal-budget.json");
-})
+app.get("/budget", (req, res) => {
+    res.sendFile("personal-budget.json", { root: '.' });
+});
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at http://localhost:${port}`);
 });
