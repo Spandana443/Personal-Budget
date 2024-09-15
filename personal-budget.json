@@ -1,15 +1,15 @@
 {
     "myBudget" : [
     {
-        "title": "Eat-out",
+        "title": "Food",
         "budget": 100
     },
     {
         "title": "Rent",
-        "budget": 350
+        "budget": 385
     },
     {
-        "title": "Groceries",
+        "title": "Grocery",
         "budget": 90
     },
     {
@@ -17,7 +17,7 @@
         "budget": 160
     },
     {
-       "title": "Maintanence",
+       "title": "Maintenance",
         "budget": 50
     },
     {
@@ -25,12 +25,12 @@
         "budget": 40
     },
     {
-        "title": "Water Bill",
+        "title": "Wi-fi Bill",
         "budget": 120
     },
     {
-        "title": "Laundry",
-        "budget": 20
+        "title": "Insurance",
+        "budget": 40
     },
     {
         "title":"others",
